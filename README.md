@@ -25,8 +25,11 @@ Tags: Chrome Android WebView Debugging
 
 1. 从 AOSP 下载 Android 4.4.3/4.4.4 源码，并先编译出 ROM；
 2. 将所有 Java 代码从 AOSP 里面拷贝到自己的工程，包括属于 Android Source 和属于 Chromium Source 的部分，还包括一些预编译过程自动生成的 Java 代码；
-3. 修改 Java 代码，主要修改包名避免跟 SDK 冲突和解决 Hidden API 调用的问题，解决的方法包括 - 拷贝使用到的内部类到自己的工程；使用反射调用隐藏 API；一些涉及内部资源使用的代码，直接注释掉；
-4. 修改相关 .mk 工程文件里面生成库的名字，修改 JNI 调用相关文件里面的 Java 类路径，重新编译得到新的 .so 库；
+3. 修改 Java 代码，主要修改包名避免跟 SDK 冲突和解决 Hidden API 调用的问题，解决的方法包括：
+  3.1 拷贝使用到的内部类到自己的工程；
+  3.2 使用反射调用隐藏 API；
+  3.3 一些涉及内部资源使用的代码，大部分都直接注释掉；
+4. 修改相关 .mk 工程文件里面库的名字，修改 JNI 调用相关文件里面的 Java 类路径，重新编译得到新的 .so 库，避免跟系统库冲突；
 5. 将新的 .so 库拷贝到自己的工程，修改 Java 代码加载新的 .so 库，加上一个简单的 TestShell 代码，然后打包生成独立应用 APK;
 
 ## 调试代码
@@ -36,7 +39,7 @@ Tags: Chrome Android WebView Debugging
 <div style="text-align:center; padding:20px 0px"><img src="http://img.blog.csdn.net/20140815170708781"></img></div>
 > CAW Native Debugging
 
-**1. 下载 AOSP Android 4.4.3 的代码，并按照官方文档先编译出 ROM 镜像。**
+**1. 下载 AOSP Android 4.4.3 的代码，并按照官方文档先编译出 ROM 镜像**
 
 **2. 重新编译出 libwebviewuc_plat_support.so**
 
