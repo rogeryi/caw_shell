@@ -93,10 +93,10 @@ public final class ViewHelper {
             }
             
             try {
-                methodExecuteHardwareAction = viewClass.getMethod("methodExecuteHardwareAction",
+                methodExecuteHardwareAction = viewClass.getMethod("executeHardwareAction",
                         Runnable.class);
             } catch (Throwable t) {
-                Log.e(TAG, "android.view.View can not get method methodExecuteHardwareAction!");
+                Log.e(TAG, "android.view.View can not get method executeHardwareAction!");
             }
         } catch (Throwable t) {
         }

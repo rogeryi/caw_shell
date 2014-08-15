@@ -26,9 +26,9 @@ Tags: Chrome Android WebView Debugging
 1. 从 AOSP 下载 Android 4.4.3/4.4.4 源码，并先编译出 ROM；
 2. 将所有 Java 代码从 AOSP 里面拷贝到自己的工程，包括属于 Android Source 和属于 Chromium Source 的部分，还包括一些预编译过程自动生成的 Java 代码；
 3. 修改 Java 代码，主要修改包名避免跟 SDK 冲突和解决 Hidden API 调用的问题，解决的方法包括：
-  3.1 拷贝使用到的内部类到自己的工程；
-  3.2 使用反射调用隐藏 API；
-  3.3 一些涉及内部资源使用的代码，大部分都直接注释掉；
+  1. 拷贝使用到的内部类到自己的工程；
+  2. 使用反射调用隐藏 API；
+  3. 一些涉及内部资源使用的代码，大部分都直接注释掉；
 4. 修改相关 .mk 工程文件里面库的名字，修改 JNI 调用相关文件里面的 Java 类路径，重新编译得到新的 .so 库，避免跟系统库冲突；
 5. 将新的 .so 库拷贝到自己的工程，修改 Java 代码加载新的 .so 库，加上一个简单的 TestShell 代码，然后打包生成独立应用 APK;
 
@@ -61,7 +61,7 @@ mm -j8
 
 **3. 重新编译出 libwebviewuc.so**
 
-- 修改 /external/chromium_org/android_webview 目录下的 libwebviewchromium.target.linux-arm.mk 文件里面生成库的名字：
+- 修改 /external/chromium_org/android_webview 目录下的 libwebviewchromium.target.linux-arm.mk 文件里面库的名字：
 
 ```
 LOCAL_MODULE:= libwebviewuc
@@ -82,7 +82,7 @@ mm -j8
 - 将带符号的库拷贝到自己工程的 obj/local/armeabi 目录下；
 - 为 Android Projct 增加 Native 支持，**并在 Builder 属性页面里面取消掉 CDT Builder 选项**，避免 Eclipse 去调用 ndk-build 编译，因为我们是使用事先编译好的 .so 库。
 - 在 Eclipse 里面创建一个 C++ Project，导入 CAW 的 C++ 代码，根据自己的需要打断点；
-- **在 AndroidManifest.xml 里面设置 Application Debuggable 为 true，使用 Debug As > Android Native Application 进行 C++ 代码调试**；
+- **使用 Debug As > Android Native Application 进行 C++ 代码调试**；
 
 [1]: http://weibo.com/roger2yi
 [2]: https://docs.google.com/document/d/1a_cUP1dGIlRQFUSic8bhAOxfclj4Xzw-yRDljVk1wB0/edit#
