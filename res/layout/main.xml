@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<EditText android:id="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content"       
+android:width="500dp" 
+android:height="300dp" 
+android:padding="20dp" 
+android:layout_margin="20dp" 
+></EditText>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定"
+android:width="200dp" 
+android:height="80dp" 
+android:layout_margin="20dp" 
+></Button>
+<Button android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" 
+android:width="200dp" 
+android:height="80dp" 
+android:layout_margin="20dp" 
+></Button>
+</LinearLayout>
+</LinearLayout>
+
+

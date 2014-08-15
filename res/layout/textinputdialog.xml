@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"   
+     android:id="@+id/ScrollView" 
+     android:layout_width="fill_parent"   
+     android:layout_height="fill_parent" 
+	 >  
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="20"
+        android:background="@android:drawable/editbox_background"/>  
+</ScrollView> 

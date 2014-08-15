@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_id_back" android:title="@string/mi_back"
+        android:icon="@drawable/navigation_back"></item>
+    <item android:id="@+id/menu_id_forward" android:title="@string/mi_forward"
+        android:icon="@drawable/navigation_forward"></item>    
+    <item android:id="@+id/menu_id_reload" android:title="@string/mi_reload"
+        android:icon="@drawable/navigation_refresh"></item>
+    <item android:id="@+id/menu_id_new" android:title="@string/mi_new"
+        android:icon="@drawable/content_new"></item>        
+    <item android:id="@+id/menu_id_close" android:title="@string/mi_close"
+        android:icon="@drawable/content_remove"></item>    
+    <item android:id="@+id/menu_id_fullscreen" android:title="@string/mi_fullscreen"
+        android:icon="@drawable/av_full_screen"></item>
+    <item android:id="@+id/menu_id_fps" android:title="@string/mi_fps"></item>
+<!--     <item android:id="@+id/menu_id_fps_ex" android:title="@string/mi_fps_ex"></item>
+    <item android:id="@+id/menu_id_fps_canvas" android:title="@string/mi_fps_canvas"></item> 
+    <item android:id="@+id/menu_id_dump_tile_textures_base" android:title="@string/mi_dump_tile_textures_base"></item>   
+    <item android:id="@+id/menu_id_dump_tile_textures_layer" android:title="@string/mi_dump_tile_textures_layer"></item>   
+    <item android:id="@+id/menu_id_set_draw_base" android:title="@string/mi_set_draw_base"></item> 
+    <item android:id="@+id/menu_id_set_draw_layer" android:title="@string/mi_set_draw_layer"></item>
+    <item android:id="@+id/menu_id_debug_missing_region" android:title="@string/mi_debug_missing_region"></item>
+    <item android:id="@+id/menu_id_debug_pure_color" android:title="@string/mi_debug_pure_color"></item>
+    <item android:id="@+id/menu_id_debug_graphic_buffer" android:title="@string/mi_debug_graphic_buffer"></item>  
+    <item android:id="@+id/menu_id_autodraw" android:title="@string/mi_autodraw"></item>
+    <item android:id="@+id/menu_id_trace" android:title="@string/mi_trace"></item>         
+    <item android:id="@+id/menu_id_displaytree" android:title="@string/mi_displaytree"></item>       
+    <item android:id="@+id/menu_id_rendertree" android:title="@string/mi_rendertree"></item>    -->
+</menu>

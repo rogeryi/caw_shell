@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="managedatalist"> 
+        <item>清除输入历史</item> 
+        <item>清除搜索历史</item> 
+        <item>清除浏览历史</item> 
+        <item>清除页面缓存</item> 
+        <item>清除Cookies</item> 
+        <item>清除首页数据</item> 
+        <item>清除表单密码</item> 
+        <item>清除Flash缓存</item> 
+	 </array> 
+	 
+	 	<array name="managedatatiplist"> 
+        <item>清除浏览器网址框输入历史记录</item> 
+        <item>清除浏览器搜索框输入记录</item> 
+        <item>清除浏览器浏览网址历史记录</item> 
+        <item>清除存储在本地缓存中的页面数据</item> 
+        <item>清除所有的Cookies登录数据</item> 
+        <item>清除浏览器的缓存首页数据</item> 
+        <item>清除所有已保存的表单密码数据</item> 
+        <item>清除缓存在本地的Flash文件数据</item> 
+	 </array> 
+</resources>

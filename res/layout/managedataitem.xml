@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+   <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/manage_data_text" 
+					  android:layout_alignParentLeft="true"
+					  android:orientation="vertical" 
+					  android:layout_centerVertical="true"
+					  android:layout_width="fill_parent" 
+					  android:layout_height="wrap_content"
+					  android:paddingLeft="10dp"
+					  android:paddingTop="6dp"
+					  android:paddingBottom="6dp">
+		<TextView android:text="TextView02" 
+				  android:id="@+id/manage_data_item"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content" 
+				  android:textColor="#F5F5F5"
+				  android:textSize="18dp">
+		</TextView>
+		<TextView android:text="TextView01" 
+				  android:id="@+id/manage_data_tip" 
+				  android:layout_width="fill_parent" 
+				  android:layout_height="wrap_content" 
+				  android:textColor="#C5C5C5"
+				  android:textSize="13dp">
+		</TextView>
+		</LinearLayout>
+		
+		<RelativeLayout android:layout_alignParentRight="true" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:paddingRight="8dp">
+		<CheckBox 
+		    android:id="@+id/manage_data_checkbox" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:focusable = "false"
+		    android:focusableInTouchMode="false"
+		    android:clickable = "false"/> 
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

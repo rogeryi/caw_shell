@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NotificationText">
+      <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="resolverTextAppearance">
+		<item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+    </style>
+
+    <style name="MediaButton">
+        <item name="android:background">@drawable/media_button_background</item>
+        <item name="android:layout_width">52dip</item>
+        <item name="android:layout_height">52dip</item>
+    </style>
+    
+    <style name="MediaButton.FullScreen">
+        <item name="android:src">@drawable/ic_media_fullscreen</item>
+    </style>
+
+    <style name="MediaButton.Play">
+        <item name="android:src">@drawable/ic_media_play</item>
+    </style>
+
+    <style name="MediaButton.Ffwd">
+        <item name="android:src">@drawable/ic_media_ff</item>
+    </style>
+
+    <style name="MediaButton.Rew">
+        <item name="android:src">@drawable/ic_media_rew</item>
+    </style>
+
+    <style name="MediaButton_Pause">
+        <item name="android:src">@drawable/ic_media_pause</item>
+        <!-- item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item -->
+    </style>
+
+    <style name="FindDialog">
+        <!-- item name="android:windowEnterAnimation">@anim/find_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/find_dialog_exit</item -->
+    </style>
+    
+	<dimen name="font_middle">18dp</dimen>
+	<dimen name="font_little">12dp</dimen>  
+	<color name="color_gray">#e0ecf9</color>  
+	
+	<style name="MyStyle" parent="android:style/Theme.Holo.Light.DarkActionBar">
+	</style>
+</resources>

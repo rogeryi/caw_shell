@@ -1,0 +1,12 @@
+bin/
+obj/
+gen/
+.settings/
+.externalToolBuilders/
+
+.classpath
+.cproject
+.project
+gdb.setup
+gdbserver
+

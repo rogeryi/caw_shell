@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014 mogoweb. All rights reserved.
+
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file.
+ -->
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+   <string name="app_name">CAW Shell</string>
+    <string name="mi_back">后退</string>
+    <string name="mi_forward">前进</string>
+    <string name="mi_reload">刷新</string>
+    <string name="mi_new">新建</string>    
+    <string name="mi_close">关闭</string>    
+    <string name="mi_fullscreen">全屏</string>   
+    <string name="mi_fontsize">字体</string>       
+    <string name="mi_fps">[调试]显示帧率</string>
+    <string name="mi_fps_ex">[调试]性能分析</string>
+    <string name="mi_fps_canvas">[调试]Canvas</string>  
+    <string name="mi_dump_tile_textures_base">[调试]输出BASE</string>  
+    <string name="mi_dump_tile_textures_layer">[调试]输出LAYER</string>   
+    <string name="mi_dump_graphic_buffer">[调试]输出缓存</string>   
+    <string name="mi_max_graphic_buffer">[调试]缓存极限</string>        
+    <string name="mi_set_draw_base">[调试]绘制BASE</string>   
+    <string name="mi_set_draw_layer">[调试]绘制LAYER</string>
+    <string name="mi_debug_missing_region">[调试]缺失区域</string>
+    <string name="mi_debug_pure_color">[调试]纯色信息</string>
+    <string name="mi_debug_graphic_buffer">[调试]纹理信息</string>
+    <string name="mi_autodraw">[调试]自动刷新</string>     
+    <string name="mi_trace">[调试]调用跟踪</string>    
+    <string name="mi_displaytree">[调试]输出显示图层</string>
+    <string name="mi_rendertree">[调试]输出合成图层</string>
+    <string name="switch_window">选择窗口</string>
+    <string name="close_window">关闭当前窗口</string>
+    <string name="no_title">无标题</string>
+
+    <!-- Title for a JavaScript dialog. "The page at <url of current page> says:" -->
+    <string name="js_dialog_title">The page at \"<xliff:g id="title">%s</xliff:g>\" says:</string>
+    <!-- Default title for a javascript dialog -->
+    <string name="js_dialog_title_default">JavaScript</string>
+    <!-- Title for the unload javascript dialog -->
+    <string name="js_dialog_before_unload_title">Confirm Navigation</string>
+    <!-- Text for the positive button on the unload javascript dialog -->
+    <string name="js_dialog_before_unload_positive_button">Leave this Page</string>
+    <!-- Text for the negative button on the unload javascript dialog -->
+    <string name="js_dialog_before_unload_negative_button">Stay on this Page</string>
+    <!-- Message in a javascript dialog asking if the user wishes to leave the current page -->
+    <string name="js_dialog_before_unload"><xliff:g id="message">%s</xliff:g>\n\nAre you sure you want to navigate away from this page?</string>
+
+    <!-- Preference framework strings. -->
+    <string name="ok">OK</string>
+    <!-- Preference framework strings. -->
+    <string name="cancel">Cancel</string>
+</resources>
