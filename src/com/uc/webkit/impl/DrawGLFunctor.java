@@ -106,7 +106,7 @@ public class DrawGLFunctor {
             }
         } else {
             // viewRootImpl.attachFunctor(mDestroyRunnable.mNativeDrawGLFunctor);
-            ViewRootHelper.detachFunctor(viewRootImpl, mDestroyRunnable.mNativeDrawGLFunctor);
+            ViewRootHelper.attachFunctor(viewRootImpl, mDestroyRunnable.mNativeDrawGLFunctor);
         }
         return true;
     }
